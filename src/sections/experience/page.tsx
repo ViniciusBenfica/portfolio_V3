@@ -96,7 +96,7 @@ export default function Experience() {
 				title="Professional Experience"
 				subtitle="Know a little more about my experience and skills as a developer"
 			/>
-			<div className="flex flex-col md:flex-row gap-8">
+			<div id="experiences" className="flex flex-col md:flex-row gap-8">
 				<div className="rounded-lg md:w-72 flex flex-wrap h-full gap-2">
 					{experiences.map((exp, index) => (
 						<button
