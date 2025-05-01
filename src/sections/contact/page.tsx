@@ -1,6 +1,7 @@
 import BodyContainer from "@/components/bodyContainer";
 import Title from "@/components/title";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Contact() {
 	return (
@@ -73,28 +74,26 @@ export default function Contact() {
 							<div>
 								<h4 className="font-medium mb-3">Social Media</h4>
 								<div className="flex space-x-4">
-									<a
+									<Link
 										href="https://github.com/viniciusbenfica"
 										target="_blank"
-										rel="noopener noreferrer"
 										className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 									>
 										<Image src="/github.svg" alt="Github" width={20.25} height={20.25} />
-									</a>
-									<a
+									</Link>
+									<Link
 										href="https://www.linkedin.com/in/vinicius-benfica/"
 										target="_blank"
-										rel="noopener noreferrer"
 										className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 									>
 										<Image src="/linkedin.svg" alt="Linkedin" width={19.5} height={19.5} />
-									</a>
-									<a
+									</Link>
+									<Link
 										href="mailto:vinicius.benfica.ruy@gmail.com"
 										className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 									>
 										<Image src="/email2.svg" alt="Email" width={19.5} height={15} />
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
