@@ -12,7 +12,7 @@ export default function Navbar() {
 		const handleScroll = () => {
 			setIsScrolled(window.scrollY > 20);
 
-			const sections = ["home", "experiences", "projects", "contact"];
+			const sections = ["home", "experiences", "contact"];
 			for (const section of sections.reverse()) {
 				const element = document.getElementById(section);
 				if (element) {
@@ -32,19 +32,17 @@ export default function Navbar() {
 	const navLinks = [
 		{ name: "Home", href: "#home" },
 		{ name: "Experiences", href: "#experiences" },
-		{ name: "Projects", href: "#projects" },
+		// { name: "Projects", href: "#projects" },
 		{ name: "Contact", href: "#contact" },
 	];
 
 	return (
 		<header
 			className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-				isScrolled
-					? "bg-black/40 backdrop-blur-md border-b border-white/5 py-3"
-					: "bg-transparent py-5"
+				isScrolled ? "bg-black/40 backdrop-blur-md py-3" : "bg-transparent py-5"
 			}`}
 		>
-			<div className="px-4 sm:px-6 lg:px-8">
+			<div className="px-4 lg:px-8">
 				<div className="flex items-center justify-between">
 					<Link
 						href="#home"
@@ -75,9 +73,9 @@ export default function Navbar() {
 					<div className="hidden md:block">
 						<Link
 							href="#contact"
-							className="bg-cyan-500 py-2 px-3 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-90 text-white transition-opacity"
+							className="bg-cyan-500 py-2 px-3 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 						>
-							Contato
+							Contact
 						</Link>
 					</div>
 
@@ -112,11 +110,11 @@ export default function Navbar() {
 						))}
 						<div className="px-4 py-2 flex">
 							<Link
-								href="#contact"
+								href="#message"
 								onClick={() => setMobileMenuOpen(false)}
-								className="bg-cyan-500 py-1 w-full text-center font-medium text-[12px] cursor-pointer rounded-md hover:opacity-90 text-white transition-opacity"
+								className="bg-cyan-500 py-2 w-full text-center font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 							>
-								Contato
+								Send a message
 							</Link>
 						</div>
 					</nav>
