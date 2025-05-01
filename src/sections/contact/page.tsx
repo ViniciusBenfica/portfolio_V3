@@ -6,12 +6,12 @@ import Link from "next/link";
 
 export default function Contact() {
 	return (
-		<BodyContainer bgColor="bg-[#0f1624]">
+		<BodyContainer id="contact" bgColor="bg-[#0f1624]">
 			<Title
 				title="Get in Touch"
 				subtitle="Let's work together? Contact me through the form or my social media"
 			/>
-			<div id="contact" className="grid md:grid-cols-2 gap-10 items-start">
+			<div className="grid md:grid-cols-2 gap-10 items-start">
 				<div>
 					<div className="bg-[#1b222f] border border-white/10 overflow-hidden rounded-lg relative">
 						<div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#01d8ff] via-[#6A3DE8] to-transparent" />

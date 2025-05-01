@@ -20,7 +20,7 @@ export default function FormContact() {
 					{state.success ? "Message sent successfully! I'll get back to you soon." : state.error}
 				</div>
 			)}
-			<Form action={formAction} className="space-y-4">
+			<Form action={formAction} className="space-y-4" id="message">
 				<div>
 					<label htmlFor="name" className="block text-sm font-medium mb-1">
 						Name

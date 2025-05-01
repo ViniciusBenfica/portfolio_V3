@@ -51,7 +51,7 @@ export default function Hero() {
 					</h1>
 
 					<div className="animate-fadeIn opacity-0 mb-8" style={{ animationDelay: "0.8s" }}>
-						<p className="text-xl md:text-xl text-[#c2c4c7] animate-typing">Full Stack Developer</p>
+						<p className="text-xl md:text-xl text-[#c2c4c7] animate-typing">FullStack Developer</p>
 					</div>
 
 					<p
@@ -68,22 +68,23 @@ export default function Hero() {
 						style={{ animationDelay: "1.2s" }}
 					>
 						<Link
-							href="#projects"
-							className="bg-cyan-500 py-2 w-full font-medium text-[12px] cursor-pointer rounded-md hover:opacity-90 text-white transition-opacity flex items-center justify-center"
+							href="https://github.com/viniciusbenfica"
+							target="_blank"
+							className="bg-cyan-500 py-2 w-full font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity flex items-center justify-center"
 						>
-							Meus Projetos
+							My projects
 						</Link>
 						<Link
 							href="#contact"
-							className="bg-[#041124] py-2 w-full text-[#00D9FF] border border-cyan-500 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-90 transition-opacity flex items-center justify-center"
+							className="bg-[#041124] py-2 w-full text-[#00D9FF] border border-cyan-500 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
 						>
-							Entre em Contato
+							Contact me
 						</Link>
 					</div>
 
 					<div className="mt-20 md:mt-32 animate-float">
 						<Link
-							href="#about"
+							href="#experiences"
 							className="flex flex-col items-center text-[#c2c4c7] hover:text-[#00D9FF] transition-colors"
 						>
 							<span className="mb-2 text-[12px]">Conheça mais</span>

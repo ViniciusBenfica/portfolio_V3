@@ -77,7 +77,7 @@ const experiences: Experience[] = [
 	},
 	{
 		company: "Freelancer",
-		role: "Fullstack Developer",
+		role: "FullStack Developer",
 		period: "Jun 2019 – Nov 2020",
 		description: [
 			"Developed custom Lua scripts for GTA RP (FiveM) servers, using HTML, CSS, JavaScript, Lua, and jQuery to deliver tailored gameplay features.",
@@ -91,12 +91,12 @@ export default function Experience() {
 	const [activeTab, setActiveTab] = useState("0");
 
 	return (
-		<BodyContainer bgColor="bg-[#0f1624]">
+		<BodyContainer id="experiences" bgColor="bg-[#0f1624]">
 			<Title
 				title="Professional Experience"
 				subtitle="Know a little more about my experience and skills as a developer"
 			/>
-			<div id="experiences" className="flex flex-col md:flex-row gap-8">
+			<div className="flex flex-col md:flex-row gap-8 min-h-[360px]">
 				<div className="rounded-lg md:w-72 flex flex-wrap h-full gap-2">
 					{experiences.map((exp, index) => (
 						<button
@@ -104,7 +104,7 @@ export default function Experience() {
 							key={index}
 							onClick={() => setActiveTab(`${index}`)}
 							data-state={activeTab === `${index}` ? "active" : "inactive"}
-							className="h-14 bg-gradient-to-r data-[state=active]:from-[#231f5f] data-[state=active]:to-[#043a50] data-[state=active]:border-l-4 data-[state=active]:border-l-purple-500 border-l-4 border-l-transparent rounded-md w-full transition-all duration-300"
+							className="h-14 bg-gradient-to-r data-[state=active]:from-[#231f5f] data-[state=active]:to-[#043a50] data-[state=active]:border-l-4 data-[state=active]:border-l-purple-500 hover:border-l-4 hover:border-l-purple-500 border-l-4 border-l-transparent cursor-pointer rounded-md w-full transition-all duration-300"
 						>
 							<div className="text-left ml-2">
 								<span className="block font-medium">{exp.company}</span>
@@ -145,7 +145,7 @@ export default function Experience() {
 									{exp.skills.map((skill) => (
 										<div
 											key={skill}
-											className="bg-[#1c1b37] p-2 text-[12px] border border-[#362b6d] rounded-full text-[#7a54e0]"
+											className="bg-[#1c1b37] p-2 text-[12px] border border-[#362b6d] rounded-xl text-[#7a54e0]"
 										>
 											{skill}
 										</div>
