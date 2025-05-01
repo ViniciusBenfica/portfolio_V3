@@ -1,5 +1,6 @@
 import BodyContainer from "@/components/bodyContainer";
 import Title from "@/components/title";
+import FormContact from "@/sections/contact/form/form";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,12 +32,12 @@ export default function Contact() {
 								/>
 								<div>
 									<h4 className="font-medium mb-1">Email</h4>
-									<a
+									<Link
 										href="mailto:vinicius.benfica.ruy@gmail.com"
 										className="text-[#c2c4c7] hover:text-[#00D9FF] transition-colors"
 									>
 										vinicius.benfica.ruy@gmail.com
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className="flex items-start">
@@ -49,12 +50,12 @@ export default function Contact() {
 								/>
 								<div>
 									<h4 className="font-medium mb-1">Phone</h4>
-									<a
+									<Link
 										href="tel:+5527999396493"
 										className="text-[#c2c4c7] hover:text-[#00D9FF] transition-colors"
 									>
 										+55 (27) 99939-6493
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className="flex items-start">
@@ -108,69 +109,7 @@ export default function Contact() {
 								Send a message
 							</h3>
 
-							<form className="space-y-4">
-								<div>
-									<label htmlFor="name" className="block text-sm font-medium mb-1">
-										Name
-									</label>
-
-									<input
-										id="name"
-										name="name"
-										placeholder="Your name"
-										required
-										className="bg-white/5 border-white/10 focus:border-[#00D9FF] focus:outline-none h-10 w-full rounded-md border px-3 py-2 md:text-sm"
-									/>
-								</div>
-
-								<div>
-									<label htmlFor="email" className="block text-sm font-medium mb-1">
-										Email
-									</label>
-									<input
-										id="email"
-										name="email"
-										type="email"
-										placeholder="your.email@example.com"
-										required
-										className="bg-white/5 border-white/10 focus:border-[#00D9FF] focus:outline-none h-10 w-full rounded-md border px-3 py-2 md:text-sm"
-									/>
-								</div>
-
-								<div>
-									<label htmlFor="subject" className="block text-sm font-medium mb-1">
-										Subject
-									</label>
-									<input
-										id="subject"
-										name="subject"
-										placeholder="Subject of the message"
-										required
-										className="bg-white/5 border-white/10 focus:border-[#00D9FF] focus:outline-none h-10 w-full rounded-md border px-3 py-2 md:text-sm"
-									/>
-								</div>
-
-								<div>
-									<label htmlFor="message" className="block text-sm font-medium mb-1">
-										Message
-									</label>
-									<textarea
-										id="message"
-										name="message"
-										placeholder="Your message..."
-										rows={5}
-										required
-										className="bg-white/5 border-white/10 focus:border-[#00D9FF] focus:outline-none w-full rounded-md border px-3 py-2 md:text-sm"
-									/>
-								</div>
-
-								<button
-									type="submit"
-									className="w-full h-10 text-sm font-semibold cursor-pointer rounded-md bg-gradient-to-r from-[#02c6ea] via-[#348df4] to-[#6A3DE8] hover:opacity-90"
-								>
-									Send Message
-								</button>
-							</form>
+							<FormContact />
 						</div>
 					</div>
 				</div>
