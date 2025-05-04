@@ -38,11 +38,11 @@ export default function Navbar() {
 
 	return (
 		<header
-			className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+			className={`fixed top-0 w-full z-50 transition-colors duration-300 px-4 lg:px-8 ${
 				isScrolled ? "bg-black/40 backdrop-blur-md py-3" : "bg-transparent py-5"
 			}`}
 		>
-			<div className="px-4 lg:px-8">
+			<div className="max-w-[1250px] mx-auto ">
 				<div className="flex items-center justify-between">
 					<Link
 						href="#home"
