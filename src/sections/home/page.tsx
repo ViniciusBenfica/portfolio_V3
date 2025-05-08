@@ -5,12 +5,12 @@ export default function Hero() {
 	return (
 		<section
 			id="home"
-			className="min-h-screen flex items-center justify-center relative bg-[#1c2435]"
+			className="h-screen min-h-[750px] flex items-center justify-center relative bg-[#1c2435]"
 		>
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
 				<div className="flex flex-col items-center text-center max-w-4xl mx-auto">
 					<div
-						className="mb-6 animate-fadeIn opacity-0 p-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10"
+						className="mb-6 animate-fadeIn opacity-0 p-2 hide-on-short rounded-full bg-white/5 backdrop-blur-sm border border-white/10"
 						style={{ animationDelay: "0.2s" }}
 					>
 						<div className="flex items-center justify-center space-x-4">
@@ -55,7 +55,7 @@ export default function Hero() {
 					</div>
 
 					<p
-						className="text-ls md:text-lg text-[#c2c4c7] max-w-xl mb-10 animate-fadeIn opacity-0"
+						className="text-sm md:text-lg text-[#c2c4c7] max-w-xl mb-10 animate-fadeIn opacity-0"
 						style={{ animationDelay: "1s" }}
 					>
 						Creating modern and intuitive digital experiences. Specialized in web and mobile
@@ -69,13 +69,13 @@ export default function Hero() {
 						<Link
 							href="https://github.com/viniciusbenfica"
 							target="_blank"
-							className="bg-cyan-500 py-2 w-full font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity flex items-center justify-center"
+							className="bg-cyan-500 py-2 w-full font-medium text-xs md:text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity flex items-center justify-center"
 						>
 							My projects
 						</Link>
 						<Link
 							href="#contact"
-							className="bg-[#041124] py-2 w-full text-[#00D9FF] border border-cyan-500 font-medium text-sm cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
+							className="bg-[#041124] py-2 w-full text-[#00D9FF] border border-cyan-500 font-medium text-xs md:text-sm cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
 						>
 							Contact me
 						</Link>
@@ -84,7 +84,8 @@ export default function Hero() {
 					<div className="mt-20 md:mt-32 animate-float">
 						<Link
 							href="#experiences"
-							className="flex flex-col items-center text-[#c2c4c7] hover:text-[#00D9FF] transition-colors"
+							className="flex flex-col items-center text-[#c2c4c7] hover:text-[#00D9FF] transition-colors opacity-0 animate-fadeIn"
+							style={{ animationDelay: "1.4s" }}
 						>
 							<span className="mb-2 text-xs">Conheça mais</span>
 							<div className="p-2 rounded-full border border-cyan-500 animate-pulse rotate-180">

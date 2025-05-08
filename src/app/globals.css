@@ -4,6 +4,13 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-height: 800px) {
+  .hide-on-short {
+    display: none;
+  }
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
