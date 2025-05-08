@@ -11,7 +11,7 @@ export default function Contact() {
 				title="Get in Touch"
 				subtitle="Let's work together? Contact me through the form or my social media"
 			/>
-			<div className="grid md:grid-cols-2 items-start justify-items-center max-w-[1050px] mx-auto">
+			<div className="grid md:grid-cols-2 items-start justify-items-center max-w-[1050px] gap-10 mx-auto">
 				<div className="bg-[#1b222f] w-full border border-white/10 overflow-hidden rounded-lg relative max-w-[490px]">
 					<div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#01d8ff] via-[#6A3DE8] to-transparent" />
 					<div className="p-8 space-y-6">
@@ -20,13 +20,7 @@ export default function Contact() {
 						</div>
 
 						<div className="flex items-start">
-							<Image
-								src="/email.svg"
-								alt="Email"
-								className="mr-4 mt-1"
-								width={19.5}
-								height={15}
-							/>
+							<Image src="/email.svg" alt="Email" className="mr-4 mt-1" width={19.5} height={15} />
 							<div>
 								<h4 className="font-medium mb-1">Email</h4>
 								<Link

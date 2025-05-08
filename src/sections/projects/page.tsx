@@ -117,7 +117,7 @@ export default function Projects() {
 							{project.liveUrl && (
 								<Link
 									href={project.liveUrl}
-									className="bg-cyan-500 py-2 px-3 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+									className="bg-cyan-500 py-2 px-3 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 								>
 									Live Demo
 								</Link>
@@ -126,7 +126,7 @@ export default function Projects() {
 							{project.githubUrl && (
 								<Link
 									href={project.githubUrl}
-									className="bg-[#041124] py-2 px-3 text-[#00D9FF] border border-cyan-500 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
+									className="bg-[#041124] py-2 px-3 text-[#00D9FF] border border-cyan-500 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
 								>
 									GitHub
 								</Link>

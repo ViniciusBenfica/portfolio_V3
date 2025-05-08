@@ -42,7 +42,7 @@ export default function Navbar() {
 				isScrolled ? "bg-black/40 backdrop-blur-md py-3" : "bg-transparent py-5"
 			}`}
 		>
-			<div className="max-w-[1280px] mx-auto ">
+			<div className="max-w-[1280px] mx-auto">
 				<div className="flex items-center justify-between">
 					<Link
 						href="#home"
@@ -56,7 +56,7 @@ export default function Navbar() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className={`px-4 py-2 text-sm relative transition-colors rounded-md ${
+								className={`px-4 py-2 text-base relative transition-colors rounded-md ${
 									activeSection === link.href.substring(1)
 										? "text-[#06daff] bg-white/5"
 										: "text-[#c2c4c7] hover:text-white hover:bg-white/5"
@@ -73,7 +73,7 @@ export default function Navbar() {
 					<div className="hidden md:block">
 						<Link
 							href="#contact"
-							className="bg-cyan-500 py-2 px-3 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+							className="bg-cyan-500 py-2 px-3 font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 						>
 							Contact
 						</Link>
@@ -112,7 +112,7 @@ export default function Navbar() {
 							<Link
 								href="#message"
 								onClick={() => setMobileMenuOpen(false)}
-								className="bg-cyan-500 py-2 w-full text-center font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+								className="bg-cyan-500 py-2 w-full text-center font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 							>
 								Send a message
 							</Link>

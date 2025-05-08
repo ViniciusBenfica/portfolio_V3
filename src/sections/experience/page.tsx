@@ -91,7 +91,7 @@ export default function Experience() {
 	const [activeTab, setActiveTab] = useState("0");
 
 	return (
-		<BodyContainer id="experiences" bgColor="bg-[#0f1624]">
+		<BodyContainer id="experiences" bgColor="bg-[#060d18]">
 			<Title
 				title="Professional Experience"
 				subtitle="Know a little more about my experience and skills as a developer"
@@ -145,7 +145,7 @@ export default function Experience() {
 									{exp.skills.map((skill) => (
 										<div
 											key={skill}
-											className="bg-[#1c1b37] p-2 text-[12px] border border-[#362b6d] rounded-xl text-[#7a54e0]"
+											className="bg-[#1c1b37] p-2 text-xs border border-[#362b6d] rounded-xl text-[#7a54e0]"
 										>
 											{skill}
 										</div>
