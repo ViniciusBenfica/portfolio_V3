@@ -38,11 +38,11 @@ export default function Navbar() {
 
 	return (
 		<header
-			className={`fixed top-0 w-full z-50 transition-colors duration-300 px-4 lg:px-8 ${
+			className={`fixed top-0 w-full z-50 transition-all duration-300 px-4 lg:px-8 ${
 				isScrolled ? "bg-black/40 backdrop-blur-md py-3" : "bg-transparent py-5"
 			}`}
 		>
-			<div className="max-w-[1250px] mx-auto ">
+			<div className="max-w-[1280px] mx-auto ">
 				<div className="flex items-center justify-between">
 					<Link
 						href="#home"
@@ -73,7 +73,7 @@ export default function Navbar() {
 					<div className="hidden md:block">
 						<Link
 							href="#contact"
-							className="bg-cyan-500 py-2 px-3 font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+							className="bg-cyan-500 py-2 px-3 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 						>
 							Contact
 						</Link>
@@ -112,7 +112,7 @@ export default function Navbar() {
 							<Link
 								href="#message"
 								onClick={() => setMobileMenuOpen(false)}
-								className="bg-cyan-500 py-2 w-full text-center font-medium text-[12px] cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+								className="bg-cyan-500 py-2 w-full text-center font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 							>
 								Send a message
 							</Link>
