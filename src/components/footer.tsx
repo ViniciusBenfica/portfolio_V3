@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ArrowUp } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
 						href="#home"
 						className="p-3 rounded-full bg-[#1b222f] hover:bg-white/20 transition-colors"
 					>
-						<Image src="/arrow.svg" alt="Arrow" width={15} height={15} />
+						<ArrowUp className="h-5 w-5 text-[#00D9FF]" />
 					</Link>
 				</div>
 			</div>

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -85,9 +85,9 @@ export default function Navbar() {
 						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
 					>
 						{mobileMenuOpen ? (
-							<Image src="/close.svg" alt="Close" width={10} height={10} />
+							<X className="w-6 h-6 text-white" />
 						) : (
-							<Image src="/menu.svg" alt="menu" width={12} height={12} />
+							<Menu className="w-6 h-6 text-white" />
 						)}
 					</button>
 				</div>

@@ -1,7 +1,7 @@
 import BodyContainer from "@/components/bodyContainer";
 import Title from "@/components/title";
 import FormContact from "@/sections/contact/form/form";
-import Image from "next/image";
+import { Github, Linkedin, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -20,7 +20,7 @@ export default function Contact() {
 						</div>
 
 						<div className="flex items-start">
-							<Image src="/email.svg" alt="Email" className="mr-4 mt-1" width={19.5} height={15} />
+							<Mail className="mr-4 mt-1 text-[#00D9FF] h-5 w-5" />
 							<div>
 								<h4 className="font-medium mb-1">Email</h4>
 								<Link
@@ -32,13 +32,7 @@ export default function Contact() {
 							</div>
 						</div>
 						<div className="flex items-start">
-							<Image
-								src="/phone.svg"
-								alt="Phone"
-								className="mr-4 mt-1"
-								width={18.75}
-								height={18.75}
-							/>
+							<Phone className="mr-4 mt-1 text-[#6039D2] h-5 w-5" />
 							<div>
 								<h4 className="font-medium mb-1">Phone</h4>
 								<Link
@@ -50,13 +44,7 @@ export default function Contact() {
 							</div>
 						</div>
 						<div className="flex items-start">
-							<Image
-								src="/location.svg"
-								alt="Location"
-								className="mr-4 mt-1"
-								width={16.5}
-								height={21}
-							/>
+							<MapPin className="mr-4 mt-1 text-[#EF2A82] h-5 w-5" />
 							<div>
 								<h4 className="font-medium mb-1">Location</h4>
 								<p className="text-[#c2c4c7]">Espirito Santo, ES - Brazil</p>
@@ -71,20 +59,20 @@ export default function Contact() {
 									target="_blank"
 									className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 								>
-									<Image src="/github.svg" alt="Github" width={20.25} height={20.25} />
+									<Github className="h-5 w-5" />
 								</Link>
 								<Link
 									href="https://www.linkedin.com/in/vinicius-benfica/"
 									target="_blank"
 									className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 								>
-									<Image src="/linkedin.svg" alt="Linkedin" width={19.5} height={19.5} />
+									<Linkedin className="h-5 w-5" />
 								</Link>
 								<Link
 									href="mailto:vinicius.benfica.ruy@gmail.com"
 									className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 								>
-									<Image src="/email2.svg" alt="Email" width={19.5} height={15} />
+									<Mail className="h-5 w-5" />
 								</Link>
 							</div>
 						</div>
@@ -94,7 +82,7 @@ export default function Contact() {
 				<div className="bg-[#1b222f] w-full border border-white/10 overflow-hidden rounded-lg max-w-[490px]">
 					<div className="p-8">
 						<h3 className="text-xl font-medium mb-6 flex items-center">
-							<Image src="/chat.svg" alt="Chat" className="mr-4 mt-1" width={19.5} height={18} />
+							<MessageSquare className="mr-4 mt-1 h-5 w-5 text-[#00D9FF]" />
 							Send a message
 						</h3>
 

@@ -1,7 +1,7 @@
 "use client";
 import BodyContainer from "@/components/bodyContainer";
 import Title from "@/components/title";
-import Image from "next/image";
+import { Calendar } from "lucide-react";
 import { useState } from "react";
 
 type Experience = {
@@ -123,13 +123,7 @@ export default function Experience() {
 										<h4 className="text-xl font-semibold text-[#01d2f7] ">{exp.role}</h4>
 										<p className="flex items-center">{exp.company}</p>
 										<p className="text-[#c2c4c7] text-sm flex items-center mt-2">
-											<Image
-												src="/calendar.svg"
-												className="mr-2"
-												alt="Calendar"
-												width={17.5}
-												height={19}
-											/>
+											<Calendar className="mr-2 h-4 w-4" />
 											{exp.period}
 										</p>
 									</div>

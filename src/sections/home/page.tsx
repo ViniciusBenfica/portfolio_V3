@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Home() {
 	return (
 		<section
 			id="home"
@@ -19,20 +19,20 @@ export default function Hero() {
 								target="_blank"
 								className="transition-colors p-2 rounded-full hover:bg-white/20"
 							>
-								<Image src="/github.svg" alt="Github" width={16} height={16} />
+								<Github className="h-5 w-5 text-white" />
 							</Link>
 							<Link
 								href="https://www.linkedin.com/in/vinicius-benfica/"
 								target="_blank"
 								className="transition-colors p-2 rounded-full hover:bg-white/20"
 							>
-								<Image src="/linkedin.svg" alt="Linkedin" width={16} height={16} />
+								<Linkedin className="h-5 w-5 text-white" />
 							</Link>
 							<Link
 								href="mailto:vinicius.benfica.ruy@gmail.com"
 								className="transition-colors p-2 rounded-full hover:bg-white/20"
 							>
-								<Image src="/email2.svg" alt="Email" width={17} height={16} />
+								<Mail className="h-5 w-5 text-white" />
 							</Link>
 						</div>
 					</div>
@@ -88,8 +88,8 @@ export default function Hero() {
 							style={{ animationDelay: "1.4s" }}
 						>
 							<span className="mb-2 text-xs">Conheça mais</span>
-							<div className="p-2 rounded-full border border-cyan-500 animate-pulse rotate-180">
-								<Image src="/arrow2.svg" alt="Arrow" width={15} height={15} />
+							<div className="p-2 rounded-full border border-cyan-500 animate-pulse">
+								<ArrowDown className="h-5 w-5 text-[#00D9FF]" />
 							</div>
 						</Link>
 					</div>
