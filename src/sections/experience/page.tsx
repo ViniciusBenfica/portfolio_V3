@@ -18,16 +18,17 @@ const experiences: Experience[] = [
 		role: "FullStack Developer",
 		period: "Dec 2023 – Present",
 		description: [
-			"Contributed to the architecture and development of 4 custom solutions in the AgroInd project, using React, Node.js, TypeScript, and Azure to build Web and Mobile (PWA) applications.",
-			"Optimized internal systems through refactoring and new feature implementation using React, Next.js, Express, Prisma, Azure, GCP, Docker, and Kubernetes.",
-			"Applied best practices such as Clean Code, Domain-Driven Design (DDD), Clean Architecture, and Agile methodologies.",
+			"Contributed to the architecture and development of 4 custom solutions using React, Node, PostgreSQL, MySQL, Prisma, TypeScript, and Azure to deliver scalable Web and Mobile (PWA) applications.",
+			"Designed and implemented a job scheduler with Cron and BullMQ allowing clients to create, manage, and monitor scheduled jobs with real-time logging and execution tracking.",
+			"Migrated the event-driven architecture from Azure Event Hubs to Google Cloud Pub/Sub, reducing operational costs.",
+			"Reduced Express API vulnerabilities from 97 to 3 by applying security best practices and managing dependency versions effectively.",
 		],
 		skills: [
 			"React",
-			"Node.js",
+			"Node",
 			"TypeScript",
 			"Azure",
-			"Next.js",
+			"Next",
 			"Express",
 			"Prisma",
 			"GCP",
@@ -40,19 +41,20 @@ const experiences: Experience[] = [
 		role: "FrontEnd Developer",
 		period: "Aug 2022 – Sep 2023",
 		description: [
-			"Developed and launched multiple web projects using Next.js, Tailwind, Styled Components, React-query, Bootstrap, and SCSS.",
-			"Built customized landing pages in WordPress and contributed to backend improvements using Node.js and Nest.js.",
+			"Participated from the ground up in the development and launch of 11 web projects using Next, React, Tailwind CSS, Styled Components, React Query, Bootstrap, and SCSS.",
+			"Built custom landing pages in WordPress and implementing responsive design.",
+			"Contributed to backend enhancements using Node, Nest, and Strapi, improving API performance and maintainability.",
 		],
 		skills: [
-			"Next.js",
+			"Next",
 			"Tailwind",
 			"Styled Components",
 			"React-query",
 			"Bootstrap",
 			"SCSS",
 			"WordPress",
-			"Node.js",
-			"Nest.js",
+			"Node",
+			"Nest",
 		],
 	},
 	{
@@ -60,18 +62,18 @@ const experiences: Experience[] = [
 		role: "BackEnd Developer",
 		period: "Nov 2021 – Aug 2022",
 		description: [
-			"Participated in the development of a triage system for self-service healthcare kiosks, using Node.js for the backend and Vue.js for the frontend.",
-			"Worked with Azure and Docker for development, deployment, environment configuration, and container versioning.",
+			"Participated in the development of a triage system for self-service healthcare kiosks using Node, Vue, Azure, and Docker.",
+			"Managed environment setup, deployment workflows, and container versioning using Azure and Docker across the entire development lifecycle.",
 		],
-		skills: ["Node.js", "Vue.js", "Azure", "Docker"],
+		skills: ["Node", "Vue", "Azure", "Docker"],
 	},
 	{
 		company: "Recovery Brazil",
 		role: "FrontEnd Developer",
 		period: "Nov 2020 – Nov 2021",
 		description: [
-			"Developed the full frontend for the GTA RP server 'Recovery City', enhancing performance through bug fixing and new feature implementation using HTML, CSS, JavaScript, jQuery, and Lua.",
-			"Contributed to the 'Drop Your Jeans' virtual campaign by John John, designing missions and features to boost player engagement.",
+			"Developed the full frontend for the GTA RP server Recovery City, which serves over 10,000 users, enhancing performance and stability by fixing bugs and delivering new features using HTML, CSS, JavaScript, MariaDB, jQuery, and Lua.",
+			"Contributed to the ”Drop Your Jeans” virtual campaign by John John, integrated within Recovery City as an immersive, in-game branded experience",
 		],
 		skills: ["HTML", "CSS", "JavaScript", "jQuery", "Lua"],
 	},
@@ -80,10 +82,10 @@ const experiences: Experience[] = [
 		role: "FullStack Developer",
 		period: "Jun 2019 – Nov 2020",
 		description: [
-			"Developed custom Lua scripts for GTA RP (FiveM) servers, using HTML, CSS, JavaScript, Lua, and jQuery to deliver tailored gameplay features.",
-			"Built websites for showcasing and selling scripts using React.js, focusing on responsiveness, performance, and user experience.",
+			"Developed custom Lua scripts and dynamic UI components for GTA RP (FiveM) servers using Lua, HTML, CSS, JavaScript, and jQuery.",
+			"Built websites using React to showcase and sell scripts, focusing on modern design and user experience.",
 		],
-		skills: ["Lua", "HTML", "CSS", "JavaScript", "jQuery", "React.js"],
+		skills: ["Lua", "HTML", "CSS", "JavaScript", "jQuery", "React"],
 	},
 ];
 
@@ -96,7 +98,7 @@ export default function Experience() {
 				title="Professional Experience"
 				subtitle="Know a little more about my experience and skills as a developer"
 			/>
-			<div className="flex flex-col md:flex-row gap-8 min-h-[360px]">
+			<div className="flex flex-col md:flex-row gap-8 min-h-[370px]">
 				<div className="rounded-lg md:w-72 flex flex-wrap h-full gap-2">
 					{experiences.map((exp, index) => (
 						<button
