@@ -11,7 +11,7 @@ export default function App() {
 			<Navbar />
 			<Home />
 			<Experience />
-			{/* <Projects /> */}
+			<Projects />
 			<Contact />
 			<Footer />
 		</>
