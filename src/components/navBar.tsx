@@ -10,9 +10,10 @@ export default function Navbar() {
 
 	useEffect(() => {
 		const handleScroll = () => {
+			console.log("window.scrollY");
 			setIsScrolled(window.scrollY > 20);
 
-			const sections = ["home", "experiences", "contact"];
+			const sections = ["home", "experiences", "projects", "contact"];
 			for (const section of sections.reverse()) {
 				const element = document.getElementById(section);
 				if (element) {
@@ -26,13 +27,14 @@ export default function Navbar() {
 		};
 
 		window.addEventListener("scroll", handleScroll);
+		handleScroll();
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	const navLinks = [
 		{ name: "Home", href: "#home" },
 		{ name: "Experiences", href: "#experiences" },
-		// { name: "Projects", href: "#projects" },
+		{ name: "Projects", href: "#projects" },
 		{ name: "Contact", href: "#contact" },
 	];
 
@@ -73,7 +75,7 @@ export default function Navbar() {
 					<div className="hidden md:block">
 						<Link
 							href="#contact"
-							className="bg-cyan-500 py-2 px-3 font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+							className="bg-[#6039D2] py-2 px-3 font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 						>
 							Contact
 						</Link>
@@ -112,7 +114,7 @@ export default function Navbar() {
 							<Link
 								href="#message"
 								onClick={() => setMobileMenuOpen(false)}
-								className="bg-cyan-500 py-2 w-full text-center font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+								className="bg-[#6039D2] py-2 w-full text-center font-medium text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 							>
 								Send a message
 							</Link>

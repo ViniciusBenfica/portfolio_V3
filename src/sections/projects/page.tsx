@@ -99,7 +99,7 @@ export default function Projects() {
 								<Link
 									target="_blank"
 									href={project.liveUrl}
-									className="bg-cyan-500 py-2 px-3 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
+									className="bg-[#6039D2] py-2 px-3 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity"
 								>
 									Live Demo
 								</Link>
@@ -109,7 +109,7 @@ export default function Projects() {
 								<Link
 									target="_blank"
 									href={project.githubUrl}
-									className="bg-[#041124] py-2 px-3 text-[#00D9FF] border border-cyan-500 font-medium text-xs cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
+									className="bg-[#041124] py-2 px-3 text-white font-medium text-xs cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
 								>
 									GitHub
 								</Link>

@@ -69,13 +69,13 @@ export default function Home() {
 						<Link
 							href="https://github.com/viniciusbenfica"
 							target="_blank"
-							className="bg-cyan-500 py-2 w-full font-medium text-xs md:text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity flex items-center justify-center"
+							className="bg-[#6039D2] py-2 w-full font-medium text-xs md:text-sm cursor-pointer rounded-md hover:opacity-80 text-white transition-opacity flex items-center justify-center"
 						>
 							My projects
 						</Link>
 						<Link
 							href="#contact"
-							className="bg-[#041124] py-2 w-full text-[#00D9FF] border border-cyan-500 font-medium text-xs md:text-sm cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
+							className="bg-[#041124] py-2 w-full text-white border border-[#6039D2] font-medium text-xs md:text-sm cursor-pointer rounded-md hover:opacity-80 transition-opacity flex items-center justify-center"
 						>
 							Contact me
 						</Link>
@@ -87,7 +87,7 @@ export default function Home() {
 							className="flex flex-col items-center text-[#c2c4c7] hover:text-[#00D9FF] transition-colors opacity-0 animate-fadeIn"
 							style={{ animationDelay: "1.4s" }}
 						>
-							<span className="mb-2 text-xs">Conheça mais</span>
+							<span className="mb-2 text-xs">Learn more</span>
 							<div className="p-2 rounded-full border border-cyan-500 animate-pulse">
 								<ArrowDown className="h-5 w-5 text-[#00D9FF]" />
 							</div>
