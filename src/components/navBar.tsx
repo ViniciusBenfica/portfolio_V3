@@ -12,7 +12,7 @@ export default function Navbar() {
 		const handleScroll = () => {
 			setIsScrolled(window.scrollY > 20);
 
-			const sections = ["home", "experiences", "projects", "contact"];
+			const sections = ["home", "experiences", "projects", "technology", "contact"];
 			for (const section of sections.reverse()) {
 				const element = document.getElementById(section);
 				if (element) {
@@ -34,6 +34,7 @@ export default function Navbar() {
 		{ name: "Home", href: "#home" },
 		{ name: "Experiences", href: "#experiences" },
 		{ name: "Projects", href: "#projects" },
+		{ name: "Technology", href: "#technology" },
 		{ name: "Contact", href: "#contact" },
 	];
 
