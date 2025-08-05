@@ -4,6 +4,7 @@ import Contact from "@/sections/contact/page";
 import Experience from "@/sections/experience/page";
 import Home from "@/sections/home/page";
 import Projects from "@/sections/projects/page";
+import Technology from "@/sections/technology/page";
 
 export default function App() {
 	return (
@@ -12,6 +13,7 @@ export default function App() {
 			<Home />
 			<Experience />
 			<Projects />
+			<Technology />
 			<Contact />
 			<Footer />
 		</>

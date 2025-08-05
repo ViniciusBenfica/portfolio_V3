@@ -44,6 +44,7 @@ const experiences: Experience[] = [
 			"Participated from the ground up in the development and launch of 11 web projects using Next, React, Tailwind CSS, Styled Components, React Query, Bootstrap, and SCSS.",
 			"Built custom landing pages in WordPress and implementing responsive design.",
 			"Contributed to backend enhancements using Node, Nest, and Strapi, improving API performance and maintainability.",
+			"Achieved 95+ SEO scores in Google Lighthouse across multiple projects by applying best practices in accessibility, metadata structure, and performance.",
 		],
 		skills: [
 			"Next",
