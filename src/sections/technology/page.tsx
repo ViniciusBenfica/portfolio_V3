@@ -152,7 +152,7 @@ export default function Technology() {
 									return (
 										<div
 											key={tech.name}
-											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
 											<h5 className="font-medium text-sm text-center text-brand-light/80">
@@ -179,7 +179,7 @@ export default function Technology() {
 									return (
 										<div
 											key={tech.name}
-											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
 											<h5 className="font-medium text-sm text-center text-brand-light/80">
@@ -206,7 +206,7 @@ export default function Technology() {
 									return (
 										<div
 											key={tech.name}
-											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
 											<h5 className="font-medium text-sm text-center text-brand-light/80">
@@ -233,7 +233,7 @@ export default function Technology() {
 									return (
 										<div
 											key={tech.name}
-											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
 											<h5 className="font-medium text-sm text-center text-brand-light/80">
