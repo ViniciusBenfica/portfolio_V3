@@ -1,5 +1,6 @@
 import BodyContainer from "@/components/bodyContainer";
 import Title from "@/components/title";
+import Image from "next/image";
 
 export default function Technology() {
 	const frontend = [
@@ -154,7 +155,14 @@ export default function Technology() {
 											key={tech.name}
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
-											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
+											<Image
+												src={tech.icon}
+												alt={tech.name}
+												width={40}
+												height={40}
+												loading="lazy"
+												className="w-10 h-10"
+											/>
 											<h4 className="font-medium text-sm text-center">{tech.name}</h4>
 										</div>
 									);
@@ -179,7 +187,14 @@ export default function Technology() {
 											key={tech.name}
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
-											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
+											<Image
+												src={tech.icon}
+												alt={tech.name}
+												width={40}
+												height={40}
+												loading="lazy"
+												className="w-10 h-10"
+											/>
 											<h5 className="font-medium text-sm">{tech.name}</h5>
 										</div>
 									);
@@ -204,7 +219,14 @@ export default function Technology() {
 											key={tech.name}
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
-											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
+											<Image
+												src={tech.icon}
+												alt={tech.name}
+												width={40}
+												height={40}
+												loading="lazy"
+												className="w-10 h-10"
+											/>
 											<h5 className="font-medium text-sm">{tech.name}</h5>
 										</div>
 									);
@@ -229,7 +251,14 @@ export default function Technology() {
 											key={tech.name}
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
-											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
+											<Image
+												src={tech.icon}
+												alt={tech.name}
+												width={40}
+												height={40}
+												loading="lazy"
+												className="w-10 h-10"
+											/>
 											<h5 className="font-medium text-sm">{tech.name}</h5>
 										</div>
 									);
