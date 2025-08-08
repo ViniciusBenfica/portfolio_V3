@@ -17,6 +17,7 @@ export default function Home() {
 							<Link
 								href="https://github.com/viniciusbenfica"
 								target="_blank"
+								aria-label="GitHub"
 								className="transition-colors p-2 rounded-full hover:bg-white/20"
 							>
 								<Github className="h-5 w-5 text-white" />
@@ -24,12 +25,14 @@ export default function Home() {
 							<Link
 								href="https://www.linkedin.com/in/vinicius-benfica/"
 								target="_blank"
+								aria-label="LinkedIn"
 								className="transition-colors p-2 rounded-full hover:bg-white/20"
 							>
 								<Linkedin className="h-5 w-5 text-white" />
 							</Link>
 							<Link
 								href="mailto:vinicius.benfica.ruy@gmail.com"
+								aria-label="Email"
 								className="transition-colors p-2 rounded-full hover:bg-white/20"
 							>
 								<Mail className="h-5 w-5 text-white" />

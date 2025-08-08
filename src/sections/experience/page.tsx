@@ -123,7 +123,7 @@ export default function Experience() {
 							<div className="bg-[#1b222f] border border-white/10 p-6 rounded-xl hover:border-[#7254e08e] transition-all duration-300">
 								<div className="flex items-start justify-between mb-4">
 									<div>
-										<h4 className="text-xl font-semibold text-[#01d2f7] ">{exp.role}</h4>
+										<h3 className="text-xl font-semibold text-[#01d2f7]">{exp.role}</h3>
 										<p className="flex items-center">{exp.company}</p>
 										<p className="text-[#c2c4c7] text-sm flex items-center mt-2">
 											<Calendar className="mr-2 h-4 w-4" />
@@ -142,7 +142,7 @@ export default function Experience() {
 									{exp.skills.map((skill) => (
 										<div
 											key={skill}
-											className="bg-[#1c1b37] p-2 text-xs border border-[#362b6d] rounded-xl text-[#7a54e0]"
+											className="bg-[#1c1b37] p-2 text-xs border border-[#362b6d] rounded-xl text-[#a992f5]"
 										>
 											{skill}
 										</div>

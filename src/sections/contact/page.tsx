@@ -32,7 +32,7 @@ export default function Contact() {
 							</div>
 						</div>
 						<div className="flex items-start">
-							<Phone className="mr-4 mt-1 text-[#6039D2] h-5 w-5" />
+							<Phone className="mr-4 mt-1 text-[#00D9FF] h-5 w-5" />
 							<div>
 								<h4 className="font-medium mb-1">Phone</h4>
 								<Link
@@ -57,6 +57,7 @@ export default function Contact() {
 								<Link
 									href="https://github.com/viniciusbenfica"
 									target="_blank"
+									aria-label="GitHub"
 									className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 								>
 									<Github className="h-5 w-5" />
@@ -64,12 +65,14 @@ export default function Contact() {
 								<Link
 									href="https://www.linkedin.com/in/vinicius-benfica/"
 									target="_blank"
+									aria-label="LinkedIn"
 									className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 								>
 									<Linkedin className="h-5 w-5" />
 								</Link>
 								<Link
 									href="mailto:vinicius.benfica.ruy@gmail.com"
+									aria-label="Email"
 									className="p-2 bg-[#323844] rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
 								>
 									<Mail className="h-5 w-5" />

@@ -17,6 +17,7 @@ export default function Footer() {
 				<div className="flex items-center">
 					<Link
 						href="#home"
+						aria-label="Back to top"
 						className="p-3 rounded-full bg-[#1b222f] hover:bg-white/20 transition-colors"
 					>
 						<ArrowUp className="h-5 w-5 text-[#00D9FF]" />

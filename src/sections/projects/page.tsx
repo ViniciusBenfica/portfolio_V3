@@ -15,15 +15,6 @@ interface Project {
 
 const projects: Project[] = [
 	{
-		title: "TextIATransform",
-		subtitle: "TEXT TRANSFORMATION WITH AI",
-		description:
-			"A web application showcasing the power of AI in text transformation. It enables dynamic text manipulation.",
-		tags: ["Next", "TypeScript", "Tailwind CSS", "Groq AI"],
-		liveUrl: "https://text-ia-transform.vercel.app",
-		githubUrl: "https://github.com/ViniciusBenfica/TextIATransform",
-	},
-	{
 		title: "Contact Input Component",
 		subtitle: "REUSABLE COMPONENT",
 		description:
@@ -50,6 +41,24 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/ViniciusBenfica/watermark-backend",
 	},
 	{
+		title: "Vortz",
+		subtitle: "MOBILE GAME",
+		description:
+			"A fun party game where one player doesn’t know the secret word. Everyone asks questions and then votes to guess who it is.",
+		tags: ["Expo", "React Native", "TypeScript", "Jest"],
+		liveUrl: "",
+		githubUrl: "https://github.com/ViniciusBenfica/vortz",
+	},
+	{
+		title: "TextIATransform",
+		subtitle: "TEXT TRANSFORMATION WITH AI",
+		description:
+			"A web application showcasing the power of AI in text transformation. It enables dynamic text manipulation.",
+		tags: ["Next", "TypeScript", "Tailwind CSS", "Groq AI"],
+		liveUrl: "https://text-ia-transform.vercel.app",
+		githubUrl: "https://github.com/ViniciusBenfica/TextIATransform",
+	},
+	{
 		title: "Discord Telepathy",
 		subtitle: "MINI GAME FOR DISCORD",
 		description:
@@ -73,9 +82,9 @@ export default function Projects() {
 					>
 						<div className="p-6 flex-grow">
 							{project.subtitle && (
-								<div className="text-[#6039D2] text-sm font-medium tracking-wider uppercase mb-2">
+								<h3 className="text-[#00D9FF] text-sm font-medium tracking-wider uppercase mb-2">
 									{project.subtitle}
-								</div>
+								</h3>
 							)}
 							<h3 className="text-2xl font-bold mb-3 text-white group-hover:text-cyan-500 transition-colors">
 								{project.title}

@@ -144,7 +144,7 @@ export default function Technology() {
 							<div className="flex items-center gap-4 mb-6">
 								<div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6A3DE8] to-[#8a6ae4] flex items-center justify-center text-2xl" />
 								<div>
-									<h4 className="text-2xl font-bold text-gradient-purple">Frontend</h4>
+									<h3 className="text-2xl font-bold text-gradient-purple">Frontend</h3>
 								</div>
 							</div>
 							<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
@@ -155,9 +155,7 @@ export default function Technology() {
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
-											<h5 className="font-medium text-sm text-center text-brand-light/80">
-												{tech.name}
-											</h5>
+											<h4 className="font-medium text-sm text-center">{tech.name}</h4>
 										</div>
 									);
 								})}
@@ -182,9 +180,7 @@ export default function Technology() {
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
-											<h5 className="font-medium text-sm text-center text-brand-light/80">
-												{tech.name}
-											</h5>
+											<h5 className="font-medium text-sm">{tech.name}</h5>
 										</div>
 									);
 								})}
@@ -209,9 +205,7 @@ export default function Technology() {
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
-											<h5 className="font-medium text-sm text-center text-brand-light/80">
-												{tech.name}
-											</h5>
+											<h5 className="font-medium text-sm">{tech.name}</h5>
 										</div>
 									);
 								})}
@@ -236,9 +230,7 @@ export default function Technology() {
 											className="group flex flex-col items-center justify-center gap-2 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1"
 										>
 											<img src={tech.icon} alt={tech.name} className="w-10 h-10" />
-											<h5 className="font-medium text-sm text-center text-brand-light/80">
-												{tech.name}
-											</h5>
+											<h5 className="font-medium text-sm">{tech.name}</h5>
 										</div>
 									);
 								})}
